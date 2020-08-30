@@ -10,6 +10,7 @@ import hljs from 'highlight.js'
 // eslint-disable-next-line
 import javascript from 'highlight.js/lib/languages/javascript'
 import 'highlight.js/styles/monokai-sublime.css'
+import { getArticleList } from '../api/index'
 const renderer = new marked.Renderer()
 marked.setOptions({
   renderer,
@@ -51,7 +52,9 @@ export default {
     this.getArticle()
   },
   methods: {
-    getArticle () {
+    async getArticle () {
+      const result = await getArticleList()
+      console.log(result)
       this.article = '## this is\n>hello\n\n```javascript\nvar a = 1\n```\n \n`label`'
     }
   }
