@@ -46,7 +46,7 @@ yarn add webpack webpack-cli webpack-dev-server -D
 yarn add html-webpack-plugin clean-webpack-plugin -D
 
 # 安装 vue 文件编译依赖
-yarn add vue-loader @vue/compiler-sfc -D
+yarn add vue-loader @vue/compiler-sfc vue-template-compiler -D
 
 # 安装样式编译依赖
 yarn add css-loader style-loader less-loader -D
