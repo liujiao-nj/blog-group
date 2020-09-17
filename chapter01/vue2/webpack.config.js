@@ -4,7 +4,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 // 将样式和 js 文件通过 link 和 script 写入 index.html 中
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // 删除打包后的文件
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const resolve = (dir) => path.resolve(__dirname, dir)
 
@@ -23,7 +23,6 @@ module.exports = ( env = {} ) => ({
     // 解析模版
     resolve: {
         alias: {
-            'vue': '@vue/runtime-dom',
             '@': resolve('./src')
         }
     },
@@ -40,7 +39,7 @@ module.exports = ( env = {} ) => ({
             },
             {
                 test: /\.less$/,
-                ues: ['style-loader', 'css-loader', 'less-loader']
+                use: ['style-loader', 'css-loader', 'less-loader']
             }
         ]
     },
@@ -55,7 +54,7 @@ module.exports = ( env = {} ) => ({
     ],
     // 开发模式 服务器
     devServer: {
-        public: '/',
+        publicPath: '/',
         inline: true,
         hot: true,
         stats: 'minimal',

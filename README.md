@@ -67,3 +67,14 @@ touch src/main.js
 touch public/index.html
 touch src/App.vue
 ```
+
+### webpack 常规错误
+**Module not found: Error: Can't resolve 'vue'**
+```js
+resolve: {
+    alias: {
+        'vue': '@vue/runtime-dom', // 出错在此处，删除即可
+        '@': resolve('./src')
+    }
+},
+```
