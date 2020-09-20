@@ -1,12 +1,18 @@
 <template>
   <div>
-      basic
+      <t-syntax></t-syntax>
   </div>
 </template>
 
 <script>
+import TSyntax from '@/components/chapter01/templateSyntax.vue'
+
 export default {
-    name: 'basic'
+    name: 'basic',
+
+    components: {
+        TSyntax,
+    }
 }
 </script>
 
