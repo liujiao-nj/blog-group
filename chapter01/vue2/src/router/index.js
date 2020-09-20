@@ -1,20 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Basic from '@/pages/basic.vue'
-import NotFound from '@/pages/404.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-    {
-        path: '/basic',
-        component: Basic
-    },
-    {
-        path: '*',
-        component: NotFound
-    }
-]
+  {
+    path: "/basic",
+    component: () => import("@/pages/basic.vue"),
+  },
+  {
+    path: "*",
+    component: () => import("@/pages/404.vue"),
+  },
+];
 
 const router = new VueRouter({
   routes,
