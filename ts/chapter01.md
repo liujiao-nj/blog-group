@@ -48,3 +48,19 @@ function greet(name) {
 }
 console.log(greet('lj'))
 ```
+
+## TypeScript 开发辅助工具
+
+1. [TypeScript Playground](https://www.typescriptlang.org/play/) TypeScript 官方提供的在线 TypeScript 运行环境。
+
+2. [TypeScript UML Playground](https://tsuml-demo.firebaseapp.com/) 一款在线 TypeScript UML 工具，利用它你可以为指定的 TypeScript 代码生成 UML 类图。
+
+3. [JSON TO TS](http://www.jsontots.com/) 一款 TypeScript 在线工具，利用它你可以为指定的 JSON 数据生成对应的 TypeScript 接口定义。
+
+4. [Schemats](https://github.com/SweetIQ/schemats) 利用 Schemats，你可以基于（Postgres，MySQL）SQL 数据库中的 schema 自动生成 TypeScript 接口定义。
+
+5. [TypeScript AST Viewer](https://ts-ast-viewer.com/) 一款 TypeScript AST 在线工具，利用它你可以查看指定 TypeScript 代码对应的 AST（Abstract Syntax Tree）抽象语法树。
+
+6. [TypeDoc](https://typedoc.org/) TypeDoc 用于将 TypeScript 源代码中的注释转换为 HTML 文档或 JSON 模型。它可灵活扩展，并支持多种配置。
+
+7. [TypeScript ESLint](https://typescript-eslint.io/) 使用 TypeScript ESLint 可以帮助我们规范代码质量，提高团队开发效率。
