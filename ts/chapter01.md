@@ -39,7 +39,7 @@ function greet(name: string) {
 
 console.log(greet('lj'))
 ```
-通过执行 `ts first.ts` 命令，生成 `first.js`
+通过执行 `tsc first.ts` 命令，生成 `first.js`
 ```js
 // first.js
 "use strict"
