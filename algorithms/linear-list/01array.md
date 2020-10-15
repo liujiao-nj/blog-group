@@ -47,6 +47,44 @@ Array.of(1, 2, 3) // [1, 2, 3]
 Array(7) // [ , , , , , , ]
 Array(1, 2, 3) // [1, 2, 3]
 ```
+### 常规方法
 **Array.prototype.concat()**
 作用：合并两个或多个数组，并返回一个新数组
+**Array.prototype.join()**
+**Array.prototype.pop()**
+**Array.prototype.push()**
+**Array.prototype.shift()**
+**Array.prototype.unshift()**
+**Array.prototype.slice()**
+**Array.prototype.splice()**
+**Array.prototype.sort()**
+**Array.prototype.reverse()**
+
+### ES6
+**Array.prototype.copyWithin()**
+**Array.prototype.find()**
+**Array.prototype.findIndex()**
+**Array.prototype.entrise()**
+**Array.prototype.keys()**
+**Array.prototype.values()**
+**Array.prototype.includes()**
+**Array.prototype.flat()**
+**Array.prototype.flatMap()**
+
+### 进阶方法
+**Array.prototype.forEach()**
+作用：对数组的每个元素执行一次给定的函数。*返回值 `undefined`*
 **Array.prototype.map(callbackfn, thisArg)**
+作用：创建一个新数组，其结果是该数组中的每个元素是调用一次提供的函数后的返回值。
+**Array.prototype.filter()**
+作用：创建一个新数组，其包含通过所提供函数实现的测试的所有元素。
+**Array.prototype.every()**
+作用：测试一个数组内的所有元素是否都能通过某个指定函数的测试。返回一个 `boolean`。
+注意：若当前数组为空数组，此方法始终返回 `true`。
+**Array.prototype.some()**
+作用：测试一个数组内是不是至少有 1 个元素能通过某个指定函数的测试。返回一个 `boolean`。
+注意：若当前数组为空数组，此方法始终返回 `false`。
+**Array.prototype.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])**
+作用：对数组中的每个元素执行一个由您提供的 *reducer* 函数（升序执行），将其结果汇总为单个返回值。
+**Array.prototype.reduceRight()**
+作用：与 *reduce* 一致，只是执行顺序由右向左。
